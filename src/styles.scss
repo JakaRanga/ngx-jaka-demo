@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ngx-jaka/style/dark-theme.scss";
+
+body {
+    // font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: hidden;
+}

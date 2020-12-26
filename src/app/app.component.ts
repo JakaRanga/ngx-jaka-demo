@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastService } from 'ngx-jaka';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngx-jaka-demo';
+
+  constructor(private toasterService: ToastService) {
+    
+  }
+
+  publishMessage() {
+    this.toasterService.pushMessage({
+      message: 'bonjour',
+      type: 'info',
+      title: 'Test'
+    })
+  }
 }
